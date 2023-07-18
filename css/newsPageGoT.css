@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1000px;
+  /* border: 1px solid rebeccapurple; */
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+header {
+  background: #e6e1e1;
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 2.5em;
+}
+
+footer {
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+}
+
+.site-title-got {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+  font-size: 2rem;
+  margin: 0;
+}
+
+a {
+  color: #143774;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: #1792d2;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/*
+ ===========
+ Navigation
+ ===========
+ */
+nav ul {
+  /* border: 1px solid magenta; */
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  /* border: 2px dotted orange; */
+  margin-left: 2em;
+}
+
+nav a {
+  /* border: 2px solid green; */
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+/*
+ ===========
+ Media Queary
+ ===========
+ */
+
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3rem;
+  color: #212614;
+  text-align: center;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Layout */
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin: 1em 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col-1 {
+  width: 22%;
+}
+
+.col-2 {
+  width: 47%;
+}
+
+.col-3 {
+  width: 72%;
+}
+.col-bg {
+  color: #fff;
+  background: #212614;
+  padding: 1em;
+}
+
+.justifyText {
+  text-align: justify;
+}
+
+/* Put everything on top of each other if display is less than 600px */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+.border {
+  border: 1px solid red;
+}
